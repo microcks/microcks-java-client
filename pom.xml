@@ -11,6 +11,7 @@
   <properties>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
+    <maven-surefire-plugin.version>3.2.5</maven-surefire-plugin.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <jackson.version>2.17.1</jackson.version>
     <jakarta-annotation.version>3.0.0</jakarta-annotation.version>
@@ -18,6 +19,7 @@
     <apache-httpcore.version>4.4.16</apache-httpcore.version>
     <apache-httpmime.version>4.5.14</apache-httpmime.version>
     <microcks-testcontainers.version>0.2.7</microcks-testcontainers.version>
+    <keycloak-testcontainers.version>3.0.0</keycloak-testcontainers.version>
     <junit.version>5.10.2</junit.version>
     <testcontainers.version>1.20.1</testcontainers.version>
   </properties>
@@ -69,15 +71,37 @@
       <scope>test</scope>
     </dependency>
     <dependency>
+      <groupId>com.github.dasniko</groupId>
+      <artifactId>testcontainers-keycloak</artifactId>
+      <version>${keycloak-testcontainers.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
       <groupId>org.testcontainers</groupId>
       <artifactId>junit-jupiter</artifactId>
       <version>${testcontainers.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>1.5.6</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
 
   <build>
     <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>${maven-surefire-plugin.version}</version>
+        <configuration>
+          <includes>
+            <include>**/*Test.java</include>
+          </includes>
+        </configuration>
+      </plugin>
       <plugin>
         <groupId>org.openapitools</groupId>
         <artifactId>openapi-generator-maven-plugin</artifactId>
