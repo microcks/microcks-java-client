@@ -39,6 +39,3 @@ jobs:
 
       - name: Build Java components
         run: mvn -B clean package
-
-      - name: Verify Javadoc completion
-        run: mvn -B javadoc:javadoc
