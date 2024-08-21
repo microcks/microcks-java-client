@@ -8,6 +8,48 @@
   <artifactId>microcks-java-client</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
+  <name>Microcks Java Client</name>
+  <description>Java Client for interacting with Microcks API</description>
+  <url>http://microcks.github.io</url>
+  <organization>
+    <name>Microcks</name>
+    <url>http://microcks.github.io</url>
+  </organization>
+
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <id>microcks</id>
+      <name>Microcks Development Team</name>
+      <organizationUrl>https://microcks.github.io/</organizationUrl>
+    </developer>
+  </developers>
+
+  <scm>
+    <connection>scm:git:https://github.com/microcks/microcks-java-client.git</connection>
+    <developerConnection>scm:git:https://github.com/microcks/microcks-java-client.git</developerConnection>
+    <url>http://github.com/microcks/microcks-java-client/</url>
+    <tag>HEAD</tag>
+  </scm>
+
+  <distributionManagement>
+    <snapshotRepository>
+      <id>oss-sonatype-staging</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
+    <repository>
+      <id>oss-sonatype-staging</id>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
+  </distributionManagement>
+
   <properties>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
@@ -134,4 +176,31 @@
       </plugin>
     </plugins>
   </build>
+
+  <profiles>
+    <profile>
+      <id>release</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-gpg-plugin</artifactId>
+            <version>1.6</version>
+            <configuration>
+              <passphrase>${gpg.passphrase}</passphrase>
+            </configuration>
+            <executions>
+              <execution>
+                <id>sign-artifacts</id>
+                <phase>verify</phase>
+                <goals>
+                  <goal>sign</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
 </project>
