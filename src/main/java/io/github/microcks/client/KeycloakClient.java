@@ -53,7 +53,7 @@ public class KeycloakClient {
     * Connecto to a remote Kaycloent token endpoint and retrieve an OAuth token for a Service Account.
     * @param serviceAccount The Service account to retrieve token for.
     * @param saCredentials  The Service account credentials.
-    * @param tokenEndpoint  The Keycloak token endpoint (ends with /realms/<myrealm>/protocol/openid-connect/token)
+    * @param tokenEndpoint  The Keycloak token endpoint (ends with /realms/&lt;myrealm&gt;/protocol/openid-connect/token)
     * @return The OAuth token string representation
     * @throws ApiException If token cannot be retrieved.
     * @throws IOException If http connection cannot be established or closed.
