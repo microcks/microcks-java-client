@@ -9,9 +9,9 @@ A Java Client or SDK that allows you to interact with the Microcks API. It has m
 
 ## Build Status
 
-Latest released version is `0.0.1`.
+Latest released version is `0.0.2`.
 
-Current development version is `0.0.2-SNAPSHOT`.
+Current development version is `0.0.3-SNAPSHOT`.
 
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/microcks/microcks-java-client/build-verify.yml?logo=github&style=for-the-badge)](https://github.com/microcks/microcks-java-client/actions)
 
@@ -19,7 +19,7 @@ Current development version is `0.0.2-SNAPSHOT`.
 
 | Java Client | Microcks Version |
 |-------------|------------------|
-| 0.0.1       | 1.10.0 and +     |
+| 0.0.2       | 1.10.0 and +     |
 
 ## How to use it?
 
@@ -30,14 +30,14 @@ If you're using Maven:
 <dependency>
   <groupId>io.github.microcks</groupId>
   <artifactId>microcks-java-client</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
 </dependency>
 ```
 
 or if you're using Gradle:
 ```groovy  
 dependencies {
-    implementation 'io.github.microcks:microcks-java-client:0.0.1'
+    implementation 'io.github.microcks:microcks-java-client:0.0.2'
 }
 ```
 
