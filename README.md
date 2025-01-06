@@ -11,9 +11,9 @@ A Java Client or SDK that allows you to interact with the Microcks API. It has m
 
 ## Build Status
 
-Latest released version is `0.0.2`.
+Latest released version is `0.0.3`.
 
-Current development version is `0.0.3-SNAPSHOT`.
+Current development version is `0.0.4-SNAPSHOT`.
 
 #### Fossa license and security scans
 
@@ -39,6 +39,7 @@ To get involved with our community, please make sure you are familiar with the p
 | Java Client | Microcks Version |
 |-------------|------------------|
 | `0.0.2`     | `1.10.0` and +   |
+| `0.0.3`     | `1.10.0` and +   |
 
 ## How to use it?
 
@@ -49,14 +50,14 @@ If you're using Maven:
 <dependency>
   <groupId>io.github.microcks</groupId>
   <artifactId>microcks-java-client</artifactId>
-  <version>0.0.2</version>
+  <version>0.0.3</version>
 </dependency>
 ```
 
 or if you're using Gradle:
 ```groovy  
 dependencies {
-    implementation 'io.github.microcks:microcks-java-client:0.0.2'
+    implementation 'io.github.microcks:microcks-java-client:0.0.3'
 }
 ```
 
@@ -79,7 +80,7 @@ ConfigApi configApi = new ConfigApi(apiClient);
 KeycloakConfig config = configApi.getKeycloakConfig();
 ```
 
-Check the[ ]Microcks' OpenAPI reference](https://microcks.io/documentation/references/apis/open-api/) for comprehensive
+Check the [Microcks' OpenAPI reference](https://microcks.io/documentation/references/apis/open-api/) for comprehensive
 list of available endpoints and their parameters.
 
 ### Access to authenticated endpoints
