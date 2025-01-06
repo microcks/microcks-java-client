@@ -4,7 +4,7 @@
 
   <groupId>io.github.microcks</groupId>
   <artifactId>microcks-java-client</artifactId>
-  <version>0.0.2-SNAPSHOT</version>
+  <version>0.0.3-SNAPSHOT</version>
 
   <name>Microcks Java Client</name>
   <description>Java Client for interacting with Microcks API</description>
