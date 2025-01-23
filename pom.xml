@@ -152,7 +152,7 @@
               <goal>generate</goal>
             </goals>
             <configuration>
-              <inputSpec>${project.basedir}/api/microcks-openapi-v1.10.yaml</inputSpec>
+              <inputSpec>${project.basedir}/api/microcks-openapi-v1.11.yaml</inputSpec>
               <generatorName>java</generatorName>
               <library>native</library>
 
