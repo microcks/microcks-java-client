@@ -61,7 +61,7 @@
     <microcks-testcontainers.version>0.3.0</microcks-testcontainers.version>
     <keycloak-testcontainers.version>3.5.1</keycloak-testcontainers.version>
     <junit.version>5.10.2</junit.version>
-    <testcontainers.version>1.20.3</testcontainers.version>
+    <testcontainers.version>1.20.5</testcontainers.version>
   </properties>
 
   <dependencies>
