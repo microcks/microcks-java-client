@@ -59,7 +59,7 @@
     <apache-httpcore.version>4.4.16</apache-httpcore.version>
     <apache-httpmime.version>4.5.14</apache-httpmime.version>
     <microcks-testcontainers.version>0.3.0</microcks-testcontainers.version>
-    <keycloak-testcontainers.version>3.7.0</keycloak-testcontainers.version>
+    <keycloak-testcontainers.version>3.8.0</keycloak-testcontainers.version>
     <junit.version>5.12.2</junit.version>
     <testcontainers.version>1.21.0</testcontainers.version>
   </properties>
