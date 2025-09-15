@@ -33,7 +33,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class ConfigApiTest {
 
    @Container
-   public static MicrocksContainer microcks = new MicrocksContainer("quay.io/microcks/microcks-uber:1.10.0-native");
+   public static MicrocksContainer microcks = new MicrocksContainer("quay.io/microcks/microcks-uber:1.11.2-native");
 
    @Test
    void testGetKeycloakConfig() throws ApiException {
