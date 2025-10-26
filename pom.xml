@@ -55,7 +55,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <jackson.version>2.20.0</jackson.version>
     <jakarta-annotation.version>3.0.0</jakarta-annotation.version>
-    <jackson-databind-nullable.version>0.2.6</jackson-databind-nullable.version>
+    <jackson-databind-nullable.version>0.2.7</jackson-databind-nullable.version>
     <apache-httpcore.version>4.4.16</apache-httpcore.version>
     <apache-httpmime.version>4.5.14</apache-httpmime.version>
     <microcks-testcontainers.version>0.3.0</microcks-testcontainers.version>
