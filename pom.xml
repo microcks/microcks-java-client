@@ -58,10 +58,10 @@
     <jackson-databind-nullable.version>0.2.7</jackson-databind-nullable.version>
     <apache-httpcore.version>4.4.16</apache-httpcore.version>
     <apache-httpmime.version>4.5.14</apache-httpmime.version>
-    <microcks-testcontainers.version>0.4.1</microcks-testcontainers.version>
+    <microcks-testcontainers.version>0.4.4</microcks-testcontainers.version>
     <keycloak-testcontainers.version>3.9.0</keycloak-testcontainers.version>
     <junit.version>5.12.2</junit.version>
-    <testcontainers.version>1.21.3</testcontainers.version>
+    <testcontainers.version>1.21.4</testcontainers.version>
   </properties>
 
   <dependencies>
