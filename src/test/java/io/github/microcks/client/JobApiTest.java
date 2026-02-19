@@ -36,7 +36,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 class JobApiTest {
 
    @Container
-   public static MicrocksContainer microcks = new MicrocksContainer("quay.io/microcks/microcks-uber:1.12.1-native");
+   public static MicrocksContainer microcks = new MicrocksContainer("quay.io/microcks/microcks-uber:1.13.1-native");
 
    @Test
    void testManageImportJob() throws ApiException {
