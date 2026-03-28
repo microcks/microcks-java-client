@@ -53,7 +53,7 @@
     <maven.compiler.target>17</maven.compiler.target>
     <maven-surefire-plugin.version>3.5.2</maven-surefire-plugin.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <jackson.version>2.20.1</jackson.version>
+    <jackson.version>2.21.0</jackson.version>
     <jakarta-annotation.version>3.0.0</jakarta-annotation.version>
     <jackson-databind-nullable.version>0.2.7</jackson-databind-nullable.version>
     <apache-httpcore.version>4.4.16</apache-httpcore.version>
