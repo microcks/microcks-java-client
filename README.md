@@ -11,9 +11,9 @@ A Java Client or SDK that allows you to interact with the Microcks API. It has m
 
 ## Build Status
 
-Latest released version is `0.0.7`.
+Latest released version is `0.0.8`.
 
-Current development version is `0.0.8-SNAPSHOT`.
+Current development version is `0.0.9-SNAPSHOT`.
 
 #### Fossa license and security scans
 
@@ -49,14 +49,14 @@ If you're using Maven:
 <dependency>
   <groupId>io.github.microcks</groupId>
   <artifactId>microcks-java-client</artifactId>
-  <version>0.0.7</version>
+  <version>0.0.8</version>
 </dependency>
 ```
 
 or if you're using Gradle:
 ```groovy  
 dependencies {
-    implementation 'io.github.microcks:microcks-java-client:0.0.7'
+    implementation 'io.github.microcks:microcks-java-client:0.0.8'
 }
 ```
 
